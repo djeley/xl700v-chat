@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "xl700v-chat"
+version = "0.1.0"
+description = ""
+authors = ["Duncan Eley"]
+readme = "README.md"
+packages = [{include = "app", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+chainlit = "^1.1.202"
+openai = "^1.30.2"
+google-search-results = "^2.4.2"
+langchain-community = "^0.2.0"
+numexpr = "^2.10.0"
+langchain-chroma = "^0.1.1"
+langchain-openai = "^0.1.7"
+pymupdf = "^1.24.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
