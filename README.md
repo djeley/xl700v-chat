@@ -2,7 +2,7 @@
 
 ## About
 A simple demo of a chatbot that:
- - Runs on [Chainlit](https://docs.chainlit.io/get-started/overview) using [LangChain](https://github.com/langchain-ai/langchain).
+ - Runs on [Chainlit](https://docs.chainlit.io/get-started/overview) using [LangChain](https://github.com/langchain-ai/langchain) and OpenAI's ChatGPT-4o.
  - Uses custom data from a PDF loaded into a local Chroma vector store.
  - Has a chat history context for conversation support.
 
@@ -10,7 +10,7 @@ A simple demo of a chatbot that:
 ## XL700V/VA User Guide Chatbot
 The data loaded by this chatbot is a local PDF file in the data directory. The PDF file is a user guide for the Honda XL700V/VA (Transalp) motorbike.
 
-You can ask the chatbot questions such as: `Torque value for rear wheel axle`
+Example:
 
 ![UI](ui-demo.png)
 
