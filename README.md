@@ -1,7 +1,18 @@
-# Chainlit/Langchain/RAG/History Example App
+# Chainlit/LangChain/RAG/History Example App
 
-## XL700V User Guide Chatbot
-![UI](ui_demo.png)
+## About
+A simple demo of a chatbot that:
+ - Runs on [Chainlit](https://docs.chainlit.io/get-started/overview) using [LangChain](https://github.com/langchain-ai/langchain).
+ - Uses custom data from a PDF loaded into a local Chroma vector store.
+ - Has a chat history context for conversation support.
+
+
+## XL700V/VA User Guide Chatbot
+The data loaded by this chatbot is a local PDF file in the data directory. The PDF file is a user guide for the Honda XL700V/VA (Transalp) motorbike.
+
+You can ask the chatbot questions such as: `Torque value for rear wheel axle`
+
+![UI](ui-demo.png)
 
 ## Setup using Poetry
 
@@ -17,9 +28,5 @@ Add you ChatGPT API Key to the `.env` file. API Keys can be obtained here: https
 ### Run
 `poetry run chainlit run src/app/app.py`
 
-## About
-Simple demo of a chatbot that:
- - Runs on [Chainlit](https://docs.chainlit.io/get-started/overview) using [LangChain](https://github.com/langchain-ai/langchain).
- - Uses custom data from a PDF loaded into a local Chroma vector store.
- - Has a chat history context for conversation support.
+
  

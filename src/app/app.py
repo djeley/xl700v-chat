@@ -127,7 +127,7 @@ async def on_message(message: cl.Message):
     runnable = cl.user_session.get("runnable")  # type: Runnable
     msg = cl.Message(content="")
 
-    async with cl.Step(type="run", name="XL700V-User-Guide"):
+    async with cl.Step(type="run", name="XL700V/VA-User-Guide"):
         async for chunk in runnable.astream(
                 {"question": message.content},
                 config=RunnableConfig(configurable={"session_id": "unused"},
