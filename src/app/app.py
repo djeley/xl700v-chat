@@ -73,7 +73,7 @@ model = ChatOpenAI(model_name="gpt-4o", streaming=True)
 @cl.on_chat_start
 async def on_chat_start():
     system = """
-    You are a friendly assistant, guiding Honda XL700 and XL700V motorcycle owners through the verbose user guide with short and simple answers.
+    You are a friendly assistant, guiding Honda XL700V and XL700VA motorcycle owners through the verbose user guide with short and simple answers.
     If you are asked to provide more detailed answers, you can do so.
     Always provide torque values when applicable.
     Reference section and page numbers when applicable.
